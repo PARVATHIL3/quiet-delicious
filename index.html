@@ -3,32 +3,104 @@
   <head>
     <meta charset="UTF-8">
     <title>Quiet Delicious - Food Service App</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <style>
+      /* Custom styles for the food-themed template */
+      body {
+        background-color: #f8f9fa;
+      }
+      .jumbotron {
+        background-image: url(https://cdn.pixabay.com/photo/2016/02/19/10/35/kitchen-1209861_960_720.jpg);
+        background-size: cover;
+        color: #fff;
+        text-shadow: 1px 1px 1px #000;
+      }
+      .card-columns {
+        margin-top: 2rem;
+      }
+      .card {
+        transition: transform 0.2s ease-in-out;
+      }
+      .card:hover {
+        transform: scale(1.05);
+      }
+    </style>
   </head>
   <body>
     <header>
-      <h1>Quiet Delicious</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Quiet Delicious</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+        </div>
       </nav>
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Welcome to Quiet Delicious</h1>
+          <p class="lead">Our app is dedicated to providing delicious and healthy food to our customers. We understand the importance of a balanced diet, and our chefs work hard to create dishes that are both nutritious and tasty.</p>
+        </div>
+      </div>
     </header>
     <main>
-      <h2>Welcome to Quiet Delicious</h2>
-      <p>Our app is dedicated to providing delicious and healthy food to our customers. We understand the importance of a balanced diet, and our chefs work hard to create dishes that are both nutritious and tasty.</p>
-      <p>With our app, you can:</p>
-      <ul>
-        <li>View our menu</li>
-        <li>Order food for delivery or pickup</li>
-        <li>Track your order status</li>
-        <li>Leave feedback on your experience</li>
-      </ul>
-      <p>Download our app today and start enjoying the best food around!</p>
-    </main>
-    <footer>
-      <p>&copy; 2023 Quiet Delicious</p>
-    </footer>
-  </body>
-</html>
+      <div class="container">
+        <h2>Our Menu</h2>
+        <div class="card-columns">
+          <div class="card">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/05/13/17/00/steak-766926_960_720.jpg" alt="Steak">
+            <div class="card-body">
+              <h5 class="card-title">Steak</h5>
+              <p class="card-text">Our steak is cooked to perfection and served with your choice of sides.</p>
+              <a href="#" class="btn btn-primary">Order Now</a>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="https://cdn.pixabay.com/photo/2018/02/16/11/22/food-3153876_960_720.jpg" alt="Salmon">
+            <div class="card-body">
+              <h5 class="card-title">Salmon</h5>
+                        <p class="card-text">Our salmon is sustainably sourced and served with fresh vegetables.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2016/11/18/15/36/breakfast-1836444_960_720.jpg" alt="Breakfast">
+        <div class="card-body">
+          <h5 class="card-title">Breakfast</h5>
+          <p class="card-text">Start your day off right with our delicious breakfast options.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top" src="https://cdn.pixabay.com/photo/2015/10/12/15/18/mushroom-984278_960_720.jpg" alt="Mushroom Risotto">
+        <div class="card-body">
+          <h5 class="card-title">Mushroom Risotto</h5>
+          <p class="card-text">Our creamy mushroom risotto is a vegetarian favorite.</p>
+          <a href="#" class="btn btn-primary">Order Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer class="mt-5 bg-light">
+  <div class="container">
+    <p>&copy; 2023 Quiet Delicious</p>
+  </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+      </body>
+</html>       
